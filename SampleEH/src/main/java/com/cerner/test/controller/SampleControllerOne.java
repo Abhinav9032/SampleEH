@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cerner.test.bean.RequestPrototypeOne;
 import com.cerner.test.bean.ResponseProto;
+import com.cerner.test.bean.RequestTransaction;
 import com.cerner.test.exceptions.CustomException;
 import com.cerner.test.service.ValidationService;
 
@@ -29,8 +30,13 @@ public class SampleControllerOne {
 		response = validationService.validateRequestData(request);
 		return response;
 	}
-	
-	
-	
-	
+
+	@PostMapping("/patientRequest")
+	public ResponseProto getPatientRequest(@RequestBody RequestTransaction request) throws CustomException {
+		ResponseProto response = new ResponseProto();
+		System.out.println(request);
+		response = validationService.validateTransactionRequest(request);
+		return response;
+	}
+
 }

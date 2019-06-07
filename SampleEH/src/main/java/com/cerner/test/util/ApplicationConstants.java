@@ -7,6 +7,10 @@ public class ApplicationConstants {
 	public static int MINIMUM_LENGTH_CONSTRAINT_VIOLATION_CODE = 901;
 	public static String MINIMUM_LENGTH_CONSTRAINT_VIOLATION_MESSAGE = "The name must contain at least 3 caracters";
 
+	public static String MINIMUM_LENGTH_CONSTRAINT_VIOLATION_DATE_MESSAGE = "The date  must contain at least 8 numeric caracters in format YYYYMMDD";
+	
+	public static String MINIMUM_LENGTH_CONSTRAINT_VIOLATION_GENDER_MESSAGE = "The GENDER must contain at least 4 caracters";
+	
 	public static int INVALID_PHONE_NUMBER_CODE = 902;
 	public static String INVALID_PHONE_NUMBER_MESSAGE = "Please provide phone number of 10 digits";
 
@@ -28,5 +32,11 @@ public class ApplicationConstants {
 
 	public static int ALPHANUMERIC_INPUT_VIOLATION_CODE = 908;
 	public static String ALPHANUMERIC_INPUT_VIOLATION_MESSAGE = "Please provide an alphanumeric input";
+	
+	public static int NUMERIC_INPUT_VIOLATION_CODE = 909;
+	public static String NUMERIC_INPUT_VIOLATION_MESSAGE = "Please provide an Numeric input";
+	
+	public static int BOOLEAN_INPUT_VIOLATION_CODE = 910;
+	public static String BOOLEAN_INPUT_VIOLATION_MESSAGE = "Please provide an Boolean input TRUE or FALSE";
 
 }

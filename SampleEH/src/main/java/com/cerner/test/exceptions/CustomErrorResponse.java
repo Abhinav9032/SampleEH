@@ -1,19 +1,23 @@
 package com.cerner.test.exceptions;
 
+import java.util.ArrayList;
+
 public class CustomErrorResponse {
 
-	private int errorCode;
-
 	private String errorDescription;
-
-	public int getErrorCode() {
-		return errorCode;
+	private ArrayList<CustomExceptionBody> errorList;
+	
+	
+	
+	public ArrayList<CustomExceptionBody> getErrorList() {
+		return errorList;
 	}
 
-	public void setErrorCode(int errorCode) {
-		this.errorCode = errorCode;
+	public void setErrorList(ArrayList<CustomExceptionBody> errorList) {
+		this.errorList = errorList;
 	}
 
+	
 	public String getErrorDescription() {
 		return errorDescription;
 	}
